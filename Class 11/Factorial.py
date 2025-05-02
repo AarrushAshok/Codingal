@@ -5,5 +5,4 @@ if num <0:
 else:
     for num in range (1,21):
         factorial = 1
-        for x in range
         print(f"Factorial of {num} is : {factorial}")
