@@ -3,7 +3,7 @@ import turtle
 
 x = turtle.Turtle()
 screen = turtle.Screen()
-screen.bgcolor("#172030")
+screen.bgcolor("grey")
 
 x.speed(0)
 x.pencolor("orange")
