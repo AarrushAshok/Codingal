@@ -6,4 +6,4 @@ while i <= 15:
     print(f"{num}*{i}={num*i}")
     i +=1
 
-print() 
+print()
