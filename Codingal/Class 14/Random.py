@@ -1,7 +1,6 @@
 #Random
 import turtle
 import random
-import time
 
 screen = turtle.Screen()
 screen.bgcolor("white")
@@ -22,5 +21,5 @@ for i in range(100):
     for _ in range(5):
         x.forward(50)
         x.left(144)
-        
+
 turtle.done()
