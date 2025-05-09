@@ -61,38 +61,39 @@ mod(10,2)
 mod(203,4)
 print("-----------------------------------------------------------------------------------")
 
-print("Welcome to the calculator")
-print("1.Addition")
-print("2.Subtraction")
-print("3.Multiplication")
-print("4.Division")
-print("5.Finding Power")
-print("6.Finding Remainder")
-choice = int(input("Enter your choice:"))
+while True:
+    print("Welcome to the calculator")
+    print("1.Addition")
+    print("2.Subtraction")
+    print("3.Multiplication")
+    print("4.Division")
+    print("5.Finding Power")
+    print("6.Finding Remainder")
+    choice = int(input("Enter your choice:"))
 
-if choice == 1:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    add(num1,num2)
-elif choice == 2:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    sub(num1,num2)
-elif choice == 3:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    multi(num1,num2)
-elif choice == 4:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    div(num1,num2)
-elif choice == 5:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    power(num1,num2)
-elif choice == 6:
-    num1 = int(input("Enter first number:"))
-    num2 = int(input("Enter second number:"))
-    mod(num1,num2)
-else:
-    print("Invalid Choice, Try Again!")
+    if choice == 1:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        add(num1,num2)
+    elif choice == 2:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        sub(num1,num2)
+    elif choice == 3:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        multi(num1,num2)
+    elif choice == 4:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        div(num1,num2)
+    elif choice == 5:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        power(num1,num2)
+    elif choice == 6:
+        num1 = int(input("Enter first number:"))
+        num2 = int(input("Enter second number:"))
+        mod(num1,num2)
+    else:
+        print("Invalid Choice, Try Again!")
