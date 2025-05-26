@@ -7,3 +7,5 @@ def get_temperature():
         print(f"Temperature entered: {temp}°C")
     except ValueError as ve:
         print("Error:", ve)
+
+get_temperature()
