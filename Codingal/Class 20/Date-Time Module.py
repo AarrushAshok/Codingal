@@ -1,8 +1,8 @@
 #Date-Time Module
+import time
 from datetime import datetime
-from tkinter import *
 
 x = datetime.now()
-
 while True:
-print(x.now())
+    time.sleep(1)
+    print(x.now())
