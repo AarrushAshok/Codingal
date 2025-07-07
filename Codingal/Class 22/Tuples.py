@@ -23,14 +23,16 @@ print(x)
 print(y)
 print(z)
 
+#Tuple Unpacking
 t = ("My name is Aarush,","I am 14 years old,","I live in Coimbatore.")
 name,age,city = t
-print(name,age,city)
-
+print
+#Index - Starts from 0,1,2,3,4. Eg:10,20,30 = 0,1,2
 numbers = (10,20,30,40,50)
 print("index of 30:",numbers.index(30))
 print("index of 50:",numbers.index(50))
 
+#Finding Repetition
 colors=("red","blue","red","green","red","blue")
 print("red has ocuured:",colors.count("red"))
 print("blue has occured",colors.count("blue"))
