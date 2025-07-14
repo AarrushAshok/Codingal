@@ -47,3 +47,15 @@ for value in Detail.values():
     count = count +1
 for key,value in Detail.items():
     print(f"for key {key} value is {value}")
+
+student = {
+1 : "akash",
+2 : "aarush",
+3 : "aman",
+4 : "annika",
+5 : "David"
+}
+print(student)
+rolln = int(input("Enter a roll num: "))
+student.pop(rolln)
+print(student)
