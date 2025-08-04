@@ -1,5 +1,7 @@
 #Sets
 #Sets does not allow duplicate value
+#Lists allow duplicate value
+
 set1 = {1,2,3,4,4,5,6,7,9,9,9}
 set2 = {3,5,9,10,11,12,34,56,67,23}
 print(f"set1:{set1}")
