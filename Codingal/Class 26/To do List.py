@@ -2,12 +2,17 @@
 todoList = []
 
 def addTask(taskName):
-    print("Adding a Task")
+    todoList.append(taskName)
+    print(f"{taskName} is added to the list")
 def removeTask(taskName):
-    print("Removing a Task")
+    todoList.remove(taskName)
+    print(f"{taskName} is removed from the list")
 def displayAllTask():
-    print("Displaying all Task")
-def modifyTask():
+    print("Displaying all Task",todoList)
+def modifyTask(oldTask):
+    newTask = input("Enter the new task:")
+    index = todolist.index(oldTask)
+    todoList[index] = newTask]
     print("Modifying a Task")
 
 menu = """
@@ -24,12 +29,15 @@ while True:
     print(menu)
     choice = int(input("Enter your choice:"))
     if choice == 1:
-        addTask("")
+        taskName = input("Enter the task:")
+        addTask(taskName)
     elif choice ==2:
-        removeTask("")
+        taskName = input("Enter the task:")
+        removeTask(taskName)
     elif choice == 3:
         displayAllTask()
     elif choice == 4:
+        taskName = input("Enter the task name:")
         modifyTask()
     elif choice == 5:
         print("Thank you for using our Application")
