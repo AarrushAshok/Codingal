@@ -1,5 +1,5 @@
 # Object-Oriented Programming (OOP)
-# A class defines the blueprint for creating objects.
+# A class is the blueprint for creating an abject.
 # Here, the class "Human" serves as a blueprint for creating individual human objects.
 
 class Human:
