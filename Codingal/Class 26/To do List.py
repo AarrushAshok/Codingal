@@ -12,8 +12,8 @@ def displayAllTask():
 def modifyTask(oldTask):
     newTask = input("Enter the new task:")
     index = todolist.index(oldTask)
-    todoList[index] = newTask]
-    print("Modifying a Task")
+    todoList[index] = newTask
+    print(f"'{oldTask}' has been modified to '{newTask}'")
 
 menu = """
     ------Task Application------
