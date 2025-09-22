@@ -1,4 +1,5 @@
-#Inheritance (Parent -----> Child)
+#Inheritance
+#Parent -----> Child is called inheritance
 # Parent class also called as Super class
 #Child class also called as Sub class
 #When constructor called ------> Object is created
@@ -34,3 +35,18 @@ class Car(Vehicle):
 c1 = Car()
 c1.honk()
 c1.move()
+
+
+
+class Vehicle:
+    def __init__(self):
+        print("Vehicle is started(constructor called)")
+    def move(self):
+        print("Vehicle is started")
+
+class Bike(Vehicle):
+    def kick_start(self):
+        print("Bike kick-started!")
+
+b1 =Bike()
+b1.move()
