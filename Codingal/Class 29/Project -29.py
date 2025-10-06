@@ -1,4 +1,4 @@
-#Inheritance
+#Inheritance Animal
 class Animal:
     def eat(self):
         print("Animal is eating.")

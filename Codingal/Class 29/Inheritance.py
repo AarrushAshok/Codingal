@@ -1,4 +1,4 @@
-#Inheritance
+#Inheritance Vehicle
 #Parent -----> Child is called inheritance
 # Parent class also called as Super class
 #Child class also called as Sub class
