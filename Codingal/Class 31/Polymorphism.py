@@ -1,4 +1,4 @@
-#Polymorphism
+#Polymorphism in a Office
 #Polymorphism is called Overriding used by a function called "super"
 
 class CEO:
