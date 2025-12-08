@@ -30,12 +30,12 @@ while runningStatus:
     ballY += ball_speedY
 
     if ballX <= 30 or ballX >= width - 30:
-        ball_speedX *= -1
+        ball_speedX = -1
     if ballY <= 30:
-        ball_speedY *= -1
+        ball_speedY = -1
 
     if batY - 30 <= ballY <= batY and batX <= ballX <= batX + bat_width:
-        ball_speedY *= -1
+        ball_speedY = -1
         score += 1  # Increase score
 
     pygame.draw.rect(screen, "BLUE", (batX, batY, bat_width, bat_height))
