@@ -1,4 +1,4 @@
-#Dino Game
+#Dino Jump
 import pygame, random, time
 
 
