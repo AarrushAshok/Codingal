@@ -16,10 +16,12 @@ class Dino(pygame.sprite.Sprite):
         self.image = pygame.image.load("Class 38/Dino.png")
         self.image = pygame.transform.scale(self.image,(50,100))
         self.rect = self.image.get_rect(center=(100,h-50))
+
     def update(self):
         for event in pygame.event.get():
             if event.type == pygame.K_SPACE:
-                self.rect.y -=100
+                newY = self.rect.y -100
+                self.rect = self.image.get_rect(self.rect.x,newY)
 dino = Dino()
 
 sprite_group = pygame.sprite.Group()
@@ -32,4 +34,6 @@ while runningStatus:
             runningStatus = False
 
 screen.blit(bgimg,(0,0))
+sprite_group.draw(screen)
+sprite_group.update()
 pygame.display.update()
