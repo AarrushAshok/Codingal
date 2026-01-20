@@ -12,11 +12,18 @@ bgimg = pygame.transform.scale(img,(w,h))
 #Game Object Class
 class Dino(pygame.sprite.Sprite):
     def __init__(self):
+        super().__init__()
         self.image = pygame.image.load("Class 38/Dino.png")
-        self.image = pygame.transform.sclae(self.image,(50,100))
-        self.rect = self.image.get_rect(center=(w//2,h//2))
+        self.image = pygame.transform.scale(self.image,(50,100))
+        self.rect = self.image.get_rect(center=(100,h-50))
     def update(self):
-        pass
+        for event in pygame.event.get():
+            if event.type == pygame.K_SPACE:
+                self.rect.y -=100
+dino = Dino()
+
+sprite_group = pygame.sprite.Group()
+sprite_group.add(dino)
 
 runningStatus = True
 while runningStatus:
