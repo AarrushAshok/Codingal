@@ -25,7 +25,7 @@ class Dino(pygame.sprite.Sprite):
 dino = Dino()
 
 sprite_group = pygame.sprite.Group()
-sprite_group.add(dino)
+sprite_group.add(dino) 
 
 runningStatus = True
 while runningStatus:
@@ -33,7 +33,7 @@ while runningStatus:
         if event.type == pygame.QUIT:
             runningStatus = False
 
-screen.blit(bgimg,(0,0))
-sprite_group.draw(screen)
-sprite_group.update()
-pygame.display.update()
+    screen.blit(bgimg,(0,0))
+    sprite_group.draw(screen)
+    sprite_group.update()
+    pygame.display.update()
