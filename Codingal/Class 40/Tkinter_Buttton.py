@@ -1,4 +1,3 @@
-#Tkinter
 from tkinter import*
 window = Tk()
 window.title("Intro Tkinter")
@@ -16,6 +15,5 @@ button1.pack()
 button2.pack()
 button3.pack()
 button4.pack()
-
 
 window.mainloop()
