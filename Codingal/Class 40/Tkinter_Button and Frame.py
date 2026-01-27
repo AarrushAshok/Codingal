@@ -4,8 +4,12 @@ window = Tk()
 window.title("Intro Tkinter")
 window.geometry("700x400")
 
+entry = Entry(master=window)
+entry.pack()
+
 def f1():
-    helloText.config(text="Hi")
+    text = entry.get()
+    helloText.config(text="Hi"+ text)
 
 helloText = Label(master=window,text="hello",bg="blue",fg="green")
 helloText.pack()
