@@ -5,13 +5,12 @@ win.title("Notepad")
 win.geometry("600x600")
 
 def saveText():
-    content = textArea.get()
+    content = textArea.get("1.0",END)
     with open("note.txt","w") as f:
         f.write(content)
 
 btn = Button(win,text="save",command=saveText)
 btn.pack()
-
 textArea = Text(win)
 textArea.pack(fill="both",expand=True)
 
