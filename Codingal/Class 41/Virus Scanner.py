@@ -11,4 +11,4 @@ def virus():
 button = Button(window,text="Virus Scan in Progress",command=virus)
 button.place(x=40,y=80)
 
-root.mainloop()
+window.mainloop()
