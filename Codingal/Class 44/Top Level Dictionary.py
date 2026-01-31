@@ -9,7 +9,11 @@ entry = Entry(win,font=("Arial",15))
 entry.pack(pady=10)
 
 def Search():
-    pass
+    word = entry.get()
+    url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+    res = requests.get(url)
+    data = res.json()
+    print(data)
 
 searchButton = Button(win,text="Search",command=Search)
 searchButton.pack()
