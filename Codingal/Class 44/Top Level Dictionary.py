@@ -13,7 +13,7 @@ def Search():
     url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
     res = requests.get(url)
     data = res.json()
-    print(data)
+    meaning.config(text=data[0]["meanings"][0]["definitions"][0]["definition"])
 
 searchButton = Button(win,text="Search",command=Search)
 searchButton.pack()
