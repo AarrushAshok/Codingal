@@ -2,7 +2,7 @@
 from tkinter import *
 import requests
 win=Tk()
-win.geometry("400x500")
+win.geometry("500x300")
 win.title("Dictionary App")
 
 entry = Entry(win,font=("Arial",15))
